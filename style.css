@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr { 
+    width: 500px; 
+}
+
+.error {
+    color: red;
+}
+
+.board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submit button {
+    margin-top: 15px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+
+.submit button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.submit button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 400ms;
+}
+
+.submit button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 400ms;
+}
+
+.submit button:hover span {
+    padding-right: 25px;
+}
+  
+.submit button:hover span:after {
+    opacity: 1;
+    right: 0;
+}  
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tile-ban {
+    cursor: not-allowed;
+}
+
+.tile-filled {
+    background-color: whitesmoke;
+}
+
+.digits {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    margin: 2px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.number-sel {
+    background-color: grey;
+    color: #fff;
+}
+
+.h-line {
+    border-bottom: 1px solid black;
+}
+
+.v-line {
+    border-right: 1px solid black;
+}
